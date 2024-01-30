@@ -1,9 +1,17 @@
 # Wolt Delivery Fee Calculator 🛒
 
-## Getting started
-Follow the instruction to use delivery calculator 🧮
+This is Delivery fee calculator for the backend assignment belongs to Yoonseon Lee
+
+## Table of Contents
+- [Getting Started](#getting_started)
+- [Run Flask to see working API](#run_flask)
+- [Run Test](#run_test)
+
+## Getting started 🏁 <a name = "getting_started"></a>
+Follow the instruction to use delivery calculator 
 
 ### Prerequisities
+
 #### 1\. Setup virtual environment
 Python should be upgrade to Python 3.6 or upper before running the following command
 ```
@@ -22,7 +30,8 @@ If you wish to use test_delivery_fee.py file to test, please install requirement
 ```
 $ pip -r requirement_test.txt
 ```
-#### 4\. Run Flask to see working API
+### Run Flask to see working API <a name = "run_flask"></a>
+
 Run the command in the same directory as all the files are
 
 ```
@@ -41,7 +50,10 @@ Request should be as folllowing order. Keys should be remained as the same, valu
 |number_of_items    |Integer|The __number of items__ in the customer's shopping cart.                   |__4__ (customer has 4 items in the cart)   |
 |time               |String |Order time in UTC in [ISO format](https://en.wikipedia.org/wiki/ISO_8601). |__2024-01-15T13:00:00Z__                   |
 
-#### 5\. Run test
+Tip🔧 Use Thunder Client tool on VScode to check if it returns the proper value when values are given
+
+### Run test <a name = "run_test"></a>
+
 If you have installed the requirement configuration files for the test_deliver_fee.py, you can run the command:
 ```
 $ pytest
