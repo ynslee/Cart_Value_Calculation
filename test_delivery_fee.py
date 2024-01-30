@@ -76,12 +76,12 @@ def test_calculate_distance_exception():
 		new_cart = DeliveryCart(100, -1, 4, "2024-01-15T13:00:00Z")
 		new_cart.calculate_delivery_fee()
 
-def test_calculate_distance_exception():
+def test_timestamp_exception1():
 	with pytest.raises(TimestampException):
 		new_cart = DeliveryCart(100, 100, 4, "999-01-15T13:00:00Z")
 		new_cart.calculate_delivery_fee()
 
-def test_calculate_distance_exception2():
+def test_timestamp_exception2():
 	with pytest.raises(TimestampException):
 		new_cart = DeliveryCart(100, 100, 4, "2024-01-15T13:-1:00Z")
 		new_cart.calculate_delivery_fee()
