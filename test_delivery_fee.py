@@ -1,4 +1,4 @@
-from .delivery_fee import DeliveryCart, CartValueException, CalculateDistanceException, TimestampException
+from lib.delivery_fee import DeliveryCart, CartValueException, CalculateDistanceException, TimestampException
 import pytest
 
 def test_default_case():

@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from .delivery_fee import DeliveryCart
+from lib.delivery_fee import DeliveryCart
 from marshmallow import Schema, fields, ValidationError
 from datetime import datetime
 import traceback
