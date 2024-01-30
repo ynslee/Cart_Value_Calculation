@@ -16,12 +16,12 @@ Follow the instruction to use delivery calculator
 ### Prerequisities
 
 #### 1\. Setup virtual environment
-Python should be upgrade to Python 3.6 or upper before running the following command- the app excpets Python3
+Python should be upgrade to Python 3.6 or upper before running the following command-- the app expects Python3
 ```
 $ python -m venv myvenv
 ```
 #### 2\. Activite virtual environment 
-Be aware! : The path might slightly vary depending on your operating system
+﹗Be aware : The path might slightly vary depending on your operating system
 ```
 $ source myvenv/bin/activate
 ```
