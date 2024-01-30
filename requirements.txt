@@ -1,8 +1,2 @@
 Flask==3.0.1
 marshmallow==3.20.2
-
-python -m venv myvenv
-pip install
-Virtual env
-Pip install
-Run flask
