@@ -1,11 +1,11 @@
 # Wolt Delivery Fee Calculator 🛒
 
 ## Getting started
-Follow the instruction to use delivery calculator
+Follow the instruction to use delivery calculator 🧮
 
 ### Prerequisities
 #### 1\. Setup virtual environment
-Python should be upgrade to Python 3.6 or upper
+Python should be upgrade to Python 3.6 or upper before running the following command
 ```
 $ python -m venv myvenv
 ```
@@ -30,7 +30,7 @@ $ flask --app . run
 ```
 Request should be as folllowing order. Keys should be remained as the same, values can be modified 
 ```json
-{"cart_value": 0, "delivery_distance": 2235, "number_of_items": 4, "time": "2024-01-15T13:00:00Z"}
+{"cart_value": 10, "delivery_distance": 2235, "number_of_items": 4, "time": "2024-01-15T13:00:00Z"}
 ```
 ##### Field details
 
