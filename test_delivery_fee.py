@@ -53,6 +53,14 @@ def test_extra_item_case6():
 	new_cart = DeliveryCart(1200, 1000, 28, "2024-01-17T13:00:00Z")
 	assert new_cart.calculate_delivery_fee() == 1500
 
+def test_friday_rush1():
+	new_cart = DeliveryCart(1200, 1000, 14, "2024-01-19T15:00:00Z")
+	assert new_cart.calculate_delivery_fee() == 984
+
+def test_friday_rush2():
+	new_cart = DeliveryCart(1200, 1000, 27, "2024-01-19T18:00:00Z")
+	assert new_cart.calculate_delivery_fee() == 1500
+
 def test_delivery_free():
 	new_cart = DeliveryCart(20000, 1000, 28, "2024-01-17T13:00:00Z")
 	assert new_cart.calculate_delivery_fee() == 0
