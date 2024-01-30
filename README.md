@@ -4,9 +4,9 @@ This is Delivery fee calculator for the backend assignment belongs to Yoonseon L
 
 ## Table of Contents
 1\. [Getting Started](#getting_started)
-	- [Setup virtual environment](#1-setup-virtual-environment)
-	- [Activite virtual environment](#2-activite-virtual-environment)
-	- [Install needed configuraration files](#3-install-needed-configuraration-files)
+- [Setup virtual environment](#1-setup-virtual-environment)
+- [Activite virtual environment](#2-activite-virtual-environment)
+- [Install needed configuraration files](#3-install-needed-configuraration-files)
 2\. [Run Flask to see working API](#run_flask)
 3\. [Run Test](#run_test)
 
