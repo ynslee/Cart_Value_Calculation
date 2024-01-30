@@ -27,11 +27,11 @@ $ source myvenv/bin/activate
 #### 3\. Install needed configuraration files
 For the assignment requirements
 ```
-$ pip -r requirements.txt
+$ pip install -r requirements.txt
 ```
 If you wish to use test_delivery_fee.py file to test, please install requirement_test.txt as well
 ```
-$ pip -r requirement_test.txt
+$ pip install -r requirements_test.txt
 ```
 ### Run Flask to see working API <a name = "run_flask"></a>
 
