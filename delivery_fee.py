@@ -56,13 +56,9 @@ class DeliveryCart:
 	#if order_time has an error, how to catch it?
 	def calculate_delivery_fee(self):
 		surcharge = self._check_cart_value()
-		print(surcharge)
 		delivery_fee = self._calculate_delivery_distance()
-		print(delivery_fee)
 		surcharge += self._calculate_bulk_fees()
-		print(surcharge)
 		delivery_fee += surcharge
-		print(delivery_fee)
 		try:
 			order_time = datetime.strptime(self._time, "%Y-%m-%dT%H:%M:%SZ")
 		except Exception:
