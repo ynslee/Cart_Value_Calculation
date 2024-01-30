@@ -4,6 +4,9 @@ This is Delivery fee calculator for the backend assignment belongs to Yoonseon L
 
 ## Table of Contents
 - [Getting Started](#getting_started)
+	-[Setup virtual environment](#1-setup-virtual-environment)
+	-[Activite virtual environment](#2-activite-virtual-environment)
+	-[Install needed configuraration files](#3-install-needed-configuraration-files)
 - [Run Flask to see working API](#run_flask)
 - [Run Test](#run_test)
 
@@ -54,7 +57,7 @@ Tip🔧 Use Thunder Client tool on VScode to check if it returns the proper valu
 
 ### Run test <a name = "run_test"></a>
 
-If you have installed the requirement configuration files for the test_deliver_fee.py, you can run the command:
+If you have installed [the requirement configuration files](#3-install-needed-configuraration-files) for the test_deliver_fee.py, you can run the command
 ```
 $ pytest
 ```
