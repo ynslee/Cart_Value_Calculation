@@ -53,7 +53,6 @@ class DeliveryCart:
 			_surcharge += 120
 		return _surcharge
 
-	#if order_time has an error, how to catch it?
 	def calculate_delivery_fee(self):
 		surcharge = self._check_cart_value()
 		delivery_fee = self._calculate_delivery_distance()

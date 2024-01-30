@@ -40,7 +40,7 @@ Run the following command in the same directory where all the files are
 ```
 $ flask --app app run
 ```
-Payload must be sent as **[ POST ]** request to URL **[ http:://127.0.0.1:5000 ]** <br />
+Payload must be sent as **[ POST ]** request to URL **[ http://127.0.0.1:5000 ]** <br />
 Request should be as folllowing order. Keys should be remained as the same, values can be modified
 ```json
 {"cart_value": 10, "delivery_distance": 2235, "number_of_items": 4, "time": "2024-01-15T13:00:00Z"}
