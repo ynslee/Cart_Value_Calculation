@@ -1,4 +1,4 @@
-from lib.delivery_fee import DeliveryCart, CartValueException, CalculateDistanceException, TimestampException
+from lib.delivery_fee import DeliveryCart, CartValueException, CalculateDistanceException, TimestampException, IntegerValueException
 import pytest
 
 def test_default_case():
@@ -85,3 +85,19 @@ def test_timestamp_exception2():
 	with pytest.raises(TimestampException):
 		new_cart = DeliveryCart(100, 100, 4, "2024-01-15T13:-1:00Z")
 		new_cart.calculate_delivery_fee()
+
+def test_integer_value_case1():
+	with pytest.raises(IntegerValueException):
+		new_cart = DeliveryCart(640.0, 2235, 4, "2024-01-15T13:00:00Z")
+		new_cart.calculate_delivery_fee()
+
+def test_integer_value_case2():
+	with pytest.raises(IntegerValueException):
+		new_cart = DeliveryCart(640, 2235.0, 4, "2024-01-15T13:00:00Z")
+		new_cart.calculate_delivery_fee()
+
+def test_integer_value_case3():
+	with pytest.raises(IntegerValueException):
+		new_cart = DeliveryCart(640, 2235, 4.0, "2024-01-15T13:00:00Z")
+		new_cart.calculate_delivery_fee()
+

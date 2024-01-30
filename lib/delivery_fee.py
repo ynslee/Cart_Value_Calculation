@@ -10,12 +10,24 @@ class CalculateDistanceException(Exception):
 class TimestampException(Exception):
 	pass
 
+class IntegerValueException(Exception):
+	pass
+
 class DeliveryCart:
 
-	def __init__(self, cart_value: int, delivery_distance: int, number_of_items: int, time: str) -> None:
-		self._cart_value = cart_value
-		self._delivery_distance = delivery_distance
-		self._number_of_items = number_of_items
+	def __init__(self, cart_value, delivery_distance, number_of_items, time : str) -> None:
+		if isinstance(cart_value, int):
+			self._cart_value : int = cart_value
+		else:
+			raise IntegerValueException("Value is not an Integer")
+		if isinstance(delivery_distance, int):
+			self._delivery_distance : int = delivery_distance
+		else:
+			raise IntegerValueException("Value is not an Integer")
+		if isinstance(number_of_items, int):
+			self._number_of_items : int = number_of_items
+		else:
+			raise IntegerValueException("Value is not an Integer")
 		self._time = time
 
 	def _check_cart_value(self):
@@ -69,4 +81,4 @@ class DeliveryCart:
 			delivery_fee = 1500
 		if (self._cart_value >= 20000):
 			delivery_fee = 0
-		return delivery_fee
+		return int(delivery_fee)

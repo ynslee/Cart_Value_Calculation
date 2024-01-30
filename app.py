@@ -4,7 +4,8 @@ from marshmallow import Schema, fields, ValidationError
 from datetime import datetime
 import traceback
 
-def isLargerThanZero(value: int):
+def isLargerThanZero(value: str):
+	
 	return value > 0
 
 def isValidTimestamp(utcTs: str):
@@ -15,10 +16,10 @@ def isValidTimestamp(utcTs: str):
 		return False
 
 class DeliveryCartPayload(Schema):
-	cart_value = fields.Int(validate=isLargerThanZero)
-	delivery_distance = fields.Int(validate=isLargerThanZero)
-	number_of_items = fields.Int(validate=isLargerThanZero)
-	time = fields.Str(validate=isValidTimestamp)
+	cart_value = fields.Integer(strict=True, required=True, validate=isLargerThanZero)
+	delivery_distance = fields.Integer(strict=True, required=True, validate=isLargerThanZero)
+	number_of_items = fields.Integer(strict=True, required=True, validate=isLargerThanZero)
+	time = fields.String(validate=isValidTimestamp)
 
 app = Flask(__name__)
 
@@ -31,7 +32,7 @@ def delivery_fee():
 		return jsonify(e.messages), 400
 	try:
 		cart = DeliveryCart(data['cart_value'], data['delivery_distance'], data['number_of_items'], data['time'])
-		return jsonify({'delivery free' : cart.calculate_delivery_fee()}), 200
+		return jsonify({'delivery fee' : cart.calculate_delivery_fee()}), 200
 	except Exception as e:
 		print(e)
 		print(traceback.format_exc())
