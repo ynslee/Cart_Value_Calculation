@@ -38,7 +38,7 @@ $ pip install -r requirements_test.txt
 
 Run the following command in the same directory where all the files are
 ```
-$ flask --app app run
+$ FLASK_APP=lib/app.py flask run
 ```
 Payload must be sent as **[ POST ]** request to URL **[ http://127.0.0.1:5000 ]** <br />
 Request should be as folllowing order. Keys should be remained as the same, values can be modified
