@@ -1,6 +1,6 @@
-# Wolt Delivery Fee Calculator 🛒
+# Delivery fee Calculator 🛒
 
-This is Delivery fee calculator for the backend assignment belongs to Yoonseon Lee
+This is Delivery fee calculator for the backend written in Python.
 
 ## Table of Contents
 1. [Getting Started](#getting_started)
